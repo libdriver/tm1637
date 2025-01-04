@@ -76,9 +76,9 @@ uint8_t tm1637_basic_deinit(void);
 
 /**
  * @brief     basic example write
- * @param[in] addr is the start address
- * @param[in] *data points to a data buffer
- * @param[in] len is the data length
+ * @param[in] addr start address
+ * @param[in] *data pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -88,8 +88,8 @@ uint8_t tm1637_basic_write(uint8_t addr, uint8_t *data, uint8_t len);
 
 /**
  * @brief      basic example read
- * @param[out] *seg points to a seg buffer
- * @param[out] *k points to a k buffer
+ * @param[out] *seg pointer to a seg buffer
+ * @param[out] *k pointer to a k buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
