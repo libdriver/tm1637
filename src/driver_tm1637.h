@@ -151,56 +151,56 @@ typedef struct tm1637_info_s
 
 /**
  * @brief     initialize tm1637_handle_t structure
- * @param[in] HANDLE points to a tm1637 handle structure
- * @param[in] STRUCTURE is tm1637_handle_t
+ * @param[in] HANDLE pointer to a tm1637 handle structure
+ * @param[in] STRUCTURE tm1637_handle_t
  * @note      none
  */
 #define DRIVER_TM1637_LINK_INIT(HANDLE, STRUCTURE)                  memset(HANDLE, 0, sizeof(STRUCTURE))
 
 /**
  * @brief     link iic_init function
- * @param[in] HANDLE points to a tm1637 handle structure
- * @param[in] FUC points to an iic_init function address
+ * @param[in] HANDLE pointer to a tm1637 handle structure
+ * @param[in] FUC pointer to an iic_init function address
  * @note      none
  */
 #define DRIVER_TM1637_LINK_IIC_INIT(HANDLE, FUC)                   (HANDLE)->iic_init = FUC
 
 /**
  * @brief     link iic_deinit function
- * @param[in] HANDLE points to a tm1637 handle structure
- * @param[in] FUC points to an iic_deinit function address
+ * @param[in] HANDLE pointer to a tm1637 handle structure
+ * @param[in] FUC pointer to an iic_deinit function address
  * @note      none
  */
 #define DRIVER_TM1637_LINK_IIC_DEINIT(HANDLE, FUC)                 (HANDLE)->iic_deinit = FUC
 
 /**
  * @brief     link iic_write_cmd_custom function
- * @param[in] HANDLE points to a tm1637 handle structure
- * @param[in] FUC points to an iic_write_cmd_custom function address
+ * @param[in] HANDLE pointer to a tm1637 handle structure
+ * @param[in] FUC pointer to an iic_write_cmd_custom function address
  * @note      none
  */
 #define DRIVER_TM1637_LINK_IIC_WRITE_COMMAND_CUSTOM(HANDLE, FUC)   (HANDLE)->iic_write_cmd_custom = FUC
 
 /**
  * @brief     link iic_read_cmd_custom function
- * @param[in] HANDLE points to a tm1637 handle structure
- * @param[in] FUC points to an iic_read_cmd_custom function address
+ * @param[in] HANDLE pointer to a tm1637 handle structure
+ * @param[in] FUC pointer to an iic_read_cmd_custom function address
  * @note      none
  */
 #define DRIVER_TM1637_LINK_IIC_READ_COMMAND_CUSTOM(HANDLE, FUC)    (HANDLE)->iic_read_cmd_custom = FUC
 
 /**
  * @brief     link delay_ms function
- * @param[in] HANDLE points to a tm1637 handle structure
- * @param[in] FUC points to a delay_ms function address
+ * @param[in] HANDLE pointer to a tm1637 handle structure
+ * @param[in] FUC pointer to a delay_ms function address
  * @note      none
  */
 #define DRIVER_TM1637_LINK_DELAY_MS(HANDLE, FUC)                   (HANDLE)->delay_ms = FUC
 
 /**
  * @brief     link debug_print function
- * @param[in] HANDLE points to a tm1637 handle structure
- * @param[in] FUC points to a debug_print function address
+ * @param[in] HANDLE pointer to a tm1637 handle structure
+ * @param[in] FUC pointer to a debug_print function address
  * @note      none
  */
 #define DRIVER_TM1637_LINK_DEBUG_PRINT(HANDLE, FUC)                (HANDLE)->debug_print = FUC
@@ -218,7 +218,7 @@ typedef struct tm1637_info_s
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to a tm1637 info structure
+ * @param[out] *info pointer to a tm1637 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -228,7 +228,7 @@ uint8_t tm1637_info(tm1637_info_t *info);
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to a tm1637 handle structure
+ * @param[in] *handle pointer to a tm1637 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic initialization failed
@@ -240,7 +240,7 @@ uint8_t tm1637_init(tm1637_handle_t *handle);
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to a tm1637 handle structure
+ * @param[in] *handle pointer to a tm1637 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 iic deinit failed
@@ -253,7 +253,7 @@ uint8_t tm1637_deinit(tm1637_handle_t *handle);
 
 /**
  * @brief     clear segment
- * @param[in] *handle points to a tm1637 handle structure
+ * @param[in] *handle pointer to a tm1637 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 clear segment failed
@@ -265,10 +265,10 @@ uint8_t tm1637_clear_segment(tm1637_handle_t *handle);
 
 /**
  * @brief     write segment
- * @param[in] *handle points to a tm1637 handle structure
- * @param[in] addr is the start address
- * @param[in] *data points to a data buffer
- * @param[in] len is the data length
+ * @param[in] *handle pointer to a tm1637 handle structure
+ * @param[in] addr start address
+ * @param[in] *data pointer to a data buffer
+ * @param[in] len data length
  * @return    status code
  *            - 0 success
  *            - 1 write segment failed
@@ -281,9 +281,9 @@ uint8_t tm1637_write_segment(tm1637_handle_t *handle, uint8_t addr, uint8_t *dat
 
 /**
  * @brief      read segment
- * @param[in]  *handle points to a tm1637 handle structure
- * @param[out] *seg points to a seg buffer
- * @param[out] *k points to a k buffer
+ * @param[in]  *handle pointer to a tm1637 handle structure
+ * @param[out] *seg pointer to a seg buffer
+ * @param[out] *k pointer to a k buffer
  * @return     status code
  *             - 0 success
  *             - 1 read segment failed
@@ -295,8 +295,8 @@ uint8_t tm1637_read_segment(tm1637_handle_t *handle, uint8_t *seg, uint8_t *k);
 
 /**
  * @brief     set pulse width
- * @param[in] *handle points to a tm1637 handle structure
- * @param[in] width is the pulse width
+ * @param[in] *handle pointer to a tm1637 handle structure
+ * @param[in] width pulse width
  * @return    status code
  *            - 0 success
  *            - 1 set pulse width failed
@@ -308,8 +308,8 @@ uint8_t tm1637_set_pulse_width(tm1637_handle_t *handle, tm1637_pulse_width_t wid
 
 /**
  * @brief      get pulse width
- * @param[in]  *handle points to a tm1637 handle structure
- * @param[out] *width points to a pulse width buffer
+ * @param[in]  *handle pointer to a tm1637 handle structure
+ * @param[out] *width pointer to a pulse width buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -320,8 +320,8 @@ uint8_t tm1637_get_pulse_width(tm1637_handle_t *handle, tm1637_pulse_width_t *wi
 
 /**
  * @brief     enable or disable display
- * @param[in] *handle points to a tm1637 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a tm1637 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set display failed
@@ -333,8 +333,8 @@ uint8_t tm1637_set_display(tm1637_handle_t *handle, tm1637_bool_t enable);
 
 /**
  * @brief      get display status
- * @param[in]  *handle points to a tm1637 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a tm1637 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -345,8 +345,8 @@ uint8_t tm1637_get_display(tm1637_handle_t *handle, tm1637_bool_t *enable);
 
 /**
  * @brief     set address mode
- * @param[in] *handle points to a tm1637 handle structure
- * @param[in] mode is the address mode
+ * @param[in] *handle pointer to a tm1637 handle structure
+ * @param[in] mode address mode
  * @return    status code
  *            - 0 success
  *            - 1 set address mode failed
@@ -358,8 +358,8 @@ uint8_t tm1637_set_address_mode(tm1637_handle_t *handle, tm1637_address_mode_t m
 
 /**
  * @brief      get address mode
- * @param[in]  *handle points to a tm1637 handle structure
- * @param[out] *mode points to an address mode buffer
+ * @param[in]  *handle pointer to a tm1637 handle structure
+ * @param[out] *mode pointer to an address mode buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -370,8 +370,8 @@ uint8_t tm1637_get_address_mode(tm1637_handle_t *handle, tm1637_address_mode_t *
 
 /**
  * @brief     enable or disable test mode
- * @param[in] *handle points to a tm1637 handle structure
- * @param[in] enable is a bool value
+ * @param[in] *handle pointer to a tm1637 handle structure
+ * @param[in] enable bool value
  * @return    status code
  *            - 0 success
  *            - 1 set test mode failed
@@ -383,8 +383,8 @@ uint8_t tm1637_set_test_mode(tm1637_handle_t *handle, tm1637_bool_t enable);
 
 /**
  * @brief      get test mode status
- * @param[in]  *handle points to a tm1637 handle structure
- * @param[out] *enable points to a bool value buffer
+ * @param[in]  *handle pointer to a tm1637 handle structure
+ * @param[out] *enable pointer to a bool value buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -406,10 +406,10 @@ uint8_t tm1637_get_test_mode(tm1637_handle_t *handle, tm1637_bool_t *enable);
 
 /**
  * @brief     set the chip register
- * @param[in] *handle points to a tm1637 handle structure
- * @param[in] cmd is the send command
- * @param[in] *data points to a data buffer
- * @param[in] len is the data buffer length
+ * @param[in] *handle pointer to a tm1637 handle structure
+ * @param[in] cmd sent command
+ * @param[in] *data pointer to a data buffer
+ * @param[in] len data buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -421,10 +421,10 @@ uint8_t tm1637_set_reg(tm1637_handle_t *handle, uint8_t cmd, uint8_t *data, uint
 
 /**
  * @brief      get the chip register
- * @param[in]  *handle points to a tm1637 handle structure
- * @param[in]  cmd is the send command
- * @param[out] *data points to a data buffer
- * @param[in]  len is the data buffer length
+ * @param[in]  *handle pointer to a tm1637 handle structure
+ * @param[in]  cmd sent command
+ * @param[out] *data pointer to a data buffer
+ * @param[in]  len data buffer length
  * @return     status code
  *             - 0 success
  *             - 1 read failed
