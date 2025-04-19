@@ -10,7 +10,7 @@
 
 TM1637 is a kind of LED (light-emitting diode display) drive control special circuit with keyboard scan interface and it's internally integrated with MCU digital interface, data latch, LED high pressure drive and keyboard scan. This product is in DIP20/SOP20 package type with excellent performance and high quality, which is mainly applicable to the display drive of induction cooker, micro-wave oven and small household electrical appliance.
 
-LibDriver TM1637 is the full function driver of TM1637 launched by LibDriver. LibDriver TM1637 provides digital tube display, keypad scanning and other functions. LibDriver is MISRA compliant.
+LibDriver TM1637 is a full-featured driver of TM1637 launched by LibDriver. LibDriver TM1637 provides digital tube display, keypad scanning and other functions. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
