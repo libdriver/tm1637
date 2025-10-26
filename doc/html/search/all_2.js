@@ -1,9 +1,27 @@
 var searchData=
 [
-  ['iic_5fdeinit_25',['iic_deinit',['../structtm1637__handle__s.html#af6963bbad902ca6e43942b48c07986c3',1,'tm1637_handle_s']]],
-  ['iic_5finit_26',['iic_init',['../structtm1637__handle__s.html#a8826dd07625f8d90859ce9bd09628d61',1,'tm1637_handle_s']]],
-  ['iic_5fread_5fcmd_5fcustom_27',['iic_read_cmd_custom',['../structtm1637__handle__s.html#a212f525579d5a539096478d5aa22bccb',1,'tm1637_handle_s']]],
-  ['iic_5fwrite_5fcmd_5fcustom_28',['iic_write_cmd_custom',['../structtm1637__handle__s.html#a048ab50cb1b108586fa079cddd05e143',1,'tm1637_handle_s']]],
-  ['inited_29',['inited',['../structtm1637__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f',1,'tm1637_handle_s']]],
-  ['interface_30',['interface',['../structtm1637__info__s.html#aebaa6c28dd4f2c3dc27566fcb910fd28',1,'tm1637_info_s']]]
+  ['data_5fconf_0',['data_conf',['../structtm1637__handle__s.html#af030effaf6956b61319a4b79267ca033',1,'tm1637_handle_s']]],
+  ['debug_5fprint_1',['debug_print',['../structtm1637__handle__s.html#a769d5b3a6c14790a0e126e8fe70b384b',1,'tm1637_handle_s']]],
+  ['delay_5fms_2',['delay_ms',['../structtm1637__handle__s.html#a406c9433252b7366de417b7a60915c81',1,'tm1637_handle_s']]],
+  ['display_5fconf_3',['display_conf',['../structtm1637__handle__s.html#a51392827dbb34f1fed4f019d49bca57d',1,'tm1637_handle_s']]],
+  ['driver_20function_4',['driver function',['../group__tm1637__basic__driver.html',1,'tm1637 basic driver function'],['../group__tm1637__driver.html',1,'tm1637 driver function'],['../group__tm1637__example__driver.html',1,'tm1637 example driver function'],['../group__tm1637__extern__driver.html',1,'tm1637 extern driver function'],['../group__tm1637__interface__driver.html',1,'tm1637 interface driver function'],['../group__tm1637__link__driver.html',1,'tm1637 link driver function'],['../group__tm1637__test__driver.html',1,'tm1637 test driver function']]],
+  ['driver_5ftm1637_2ec_5',['driver_tm1637.c',['../driver__tm1637_8c.html',1,'']]],
+  ['driver_5ftm1637_2eh_6',['driver_tm1637.h',['../driver__tm1637_8h.html',1,'']]],
+  ['driver_5ftm1637_5fbasic_2ec_7',['driver_tm1637_basic.c',['../driver__tm1637__basic_8c.html',1,'']]],
+  ['driver_5ftm1637_5fbasic_2eh_8',['driver_tm1637_basic.h',['../driver__tm1637__basic_8h.html',1,'']]],
+  ['driver_5ftm1637_5finterface_2eh_9',['driver_tm1637_interface.h',['../driver__tm1637__interface_8h.html',1,'']]],
+  ['driver_5ftm1637_5finterface_5ftemplate_2ec_10',['driver_tm1637_interface_template.c',['../driver__tm1637__interface__template_8c.html',1,'']]],
+  ['driver_5ftm1637_5flink_5fdebug_5fprint_11',['DRIVER_TM1637_LINK_DEBUG_PRINT',['../group__tm1637__link__driver.html#ga77b9c55ca29a362d870f3b9693e3aeaa',1,'driver_tm1637.h']]],
+  ['driver_5ftm1637_5flink_5fdelay_5fms_12',['DRIVER_TM1637_LINK_DELAY_MS',['../group__tm1637__link__driver.html#ga997bdba971c52fdc72a9f3b0d02310c2',1,'driver_tm1637.h']]],
+  ['driver_5ftm1637_5flink_5fiic_5fdeinit_13',['DRIVER_TM1637_LINK_IIC_DEINIT',['../group__tm1637__link__driver.html#ga71ca99ab5a8df57367a53aa9dc114ad4',1,'driver_tm1637.h']]],
+  ['driver_5ftm1637_5flink_5fiic_5finit_14',['DRIVER_TM1637_LINK_IIC_INIT',['../group__tm1637__link__driver.html#ga862c900bfa79ec7343fee8f31d83f504',1,'driver_tm1637.h']]],
+  ['driver_5ftm1637_5flink_5fiic_5fread_5fcommand_5fcustom_15',['DRIVER_TM1637_LINK_IIC_READ_COMMAND_CUSTOM',['../group__tm1637__link__driver.html#ga275a9cee02c7d10efb7ecbb94ca06b7a',1,'driver_tm1637.h']]],
+  ['driver_5ftm1637_5flink_5fiic_5fwrite_5fcommand_5fcustom_16',['DRIVER_TM1637_LINK_IIC_WRITE_COMMAND_CUSTOM',['../group__tm1637__link__driver.html#gad7e58f989ee7e35fe1e77c9ad09af158',1,'driver_tm1637.h']]],
+  ['driver_5ftm1637_5flink_5finit_17',['DRIVER_TM1637_LINK_INIT',['../group__tm1637__link__driver.html#gae8caf3ee4611e921ade5e6d941b90c19',1,'driver_tm1637.h']]],
+  ['driver_5ftm1637_5fread_5ftest_2ec_18',['driver_tm1637_read_test.c',['../driver__tm1637__read__test_8c.html',1,'']]],
+  ['driver_5ftm1637_5fread_5ftest_2eh_19',['driver_tm1637_read_test.h',['../driver__tm1637__read__test_8h.html',1,'']]],
+  ['driver_5ftm1637_5fwrite_5ftest_2ec_20',['driver_tm1637_write_test.c',['../driver__tm1637__write__test_8c.html',1,'']]],
+  ['driver_5ftm1637_5fwrite_5ftest_2eh_21',['driver_tm1637_write_test.h',['../driver__tm1637__write__test_8h.html',1,'']]],
+  ['driver_5fversion_22',['DRIVER_VERSION',['../driver__tm1637_8c.html#ae578001fe043b4cca7a0edd801cfe9c4',1,'driver_tm1637.c']]],
+  ['driver_5fversion_23',['driver_version',['../structtm1637__info__s.html#a41b0bd442708b70d252c50b92c75265a',1,'tm1637_info_s']]]
 ];
