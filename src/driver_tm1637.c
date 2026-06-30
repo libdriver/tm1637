@@ -41,11 +41,11 @@
  */
 #define CHIP_NAME                 "Titan Micro Electronics TM1637"        /**< chip name */
 #define MANUFACTURER_NAME         "Titan Micro Electronics"               /**< manufacturer name */
-#define SUPPLY_VOLTAGE_MIN        3.3f                                    /**< chip min supply voltage */
+#define SUPPLY_VOLTAGE_MIN        4.5f                                    /**< chip min supply voltage */
 #define SUPPLY_VOLTAGE_MAX        5.5f                                    /**< chip max supply voltage */
 #define MAX_CURRENT               200.0f                                  /**< chip max current */
 #define TEMPERATURE_MIN           -40.0f                                  /**< chip min operating temperature */
-#define TEMPERATURE_MAX           125.0f                                  /**< chip max operating temperature */
+#define TEMPERATURE_MAX           85.0f                                   /**< chip max operating temperature */
 #define DRIVER_VERSION            1000                                    /**< driver version */
 
 /**

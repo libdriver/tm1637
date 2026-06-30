@@ -111,10 +111,10 @@ tm1637: chip is Titan Micro Electronics TM1637.
 tm1637: manufacturer is Titan Micro Electronics.
 tm1637: interface is GPIO.
 tm1637: driver version is 1.0.
-tm1637: min supply voltage is 3.3V.
+tm1637: min supply voltage is 4.5V.
 tm1637: max supply voltage is 5.5V.
 tm1637: max current is 200.00mA.
-tm1637: max temperature is 125.0C.
+tm1637: max temperature is 85.0C.
 tm1637: min temperature is -40.0C.
 ```
 
